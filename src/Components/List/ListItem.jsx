@@ -21,7 +21,7 @@ const ListItem = ({ item }) => {
             boxShadow: 3,
             padding: 2
         }}>
-            {/* Image on the Left */}
+
             <Box
                 sx={{
                     width: 80,
@@ -34,7 +34,6 @@ const ListItem = ({ item }) => {
                 <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Box>
 
-            {/* Info on the Right */}
             <CardContent sx={{ padding: 0 }}>
                 <Typography gutterBottom variant="h6" component="div" align="left">
                     {item.name}

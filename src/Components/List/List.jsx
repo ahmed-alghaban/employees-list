@@ -36,7 +36,6 @@ const List = () => {
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.04)",
             borderRadius: "12px",
         }}>
-            {/* Display the Cards */}
             <Grid container spacing={2} justifyContent="center">
                 {currentItems.map((item, index) => (
                     <Grid item key={index} xs={12}>
@@ -45,7 +44,6 @@ const List = () => {
                 ))}
             </Grid>
 
-            {/* Pagination Controls */}
             <Box sx={{ marginTop: 2, display: 'flex', justifyContent: 'center' }}>
                 <Button onClick={handlePrev} disabled={page === 0} sx={{ marginRight: 2 }}>
                     Previous
